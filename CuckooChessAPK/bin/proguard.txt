@@ -1,0 +1,10 @@
+# view land/res/layout-land/main.xml #generated:7
+# view res/layout/main.xml #generated:7
+-keep class org.petero.cuckoochess.ChessBoard { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class org.petero.cuckoochess.CuckooChess { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class org.petero.cuckoochess.Preferences { <init>(...); }
+

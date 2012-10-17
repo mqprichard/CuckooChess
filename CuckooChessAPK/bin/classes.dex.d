@@ -1,0 +1,24 @@
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes.dex : \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/BuildConfig.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/ChessBoard$OnTrackballListener.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/ChessBoard.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$1.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$2.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$3.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$4.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$5.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$6.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess$7.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/CuckooChess.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/Preferences.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$array.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$attr.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$drawable.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$id.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$layout.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$menu.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$string.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R$xml.class \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/bin/classes/org/petero/cuckoochess/R.class \
+/Users/markprichard/android-sdk-macosx/tools/support/annotations.jar \
+/Users/markprichard/projects/cuckoochess/CuckooChessAPK/libs/CuckooChess.jar \
