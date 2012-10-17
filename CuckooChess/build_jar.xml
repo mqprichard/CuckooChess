@@ -29,5 +29,7 @@
         		<include name="test/**/*.java"/>
         	</fileset>
         </jar>
+        <mkdir dir="../CuckooChessAPK/libs"/>
+        <copy file="deploy/CuckooChess.jar" todir="../CuckooChessAPK/libs"/>
     </target>
 </project>
