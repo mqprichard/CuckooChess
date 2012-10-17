@@ -1,0 +1,4 @@
+CuckooChess
+===========
+
+CuckooChess Android Project
