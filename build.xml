@@ -2,6 +2,26 @@
 <project default="create_run_jar" name="Create Runnable Jar for Project CuckooChess">
     <!--this file was created by Eclipse Runnable JAR Export Wizard-->
     <!--ANT 1.7 is required                                        -->
+    <target name="compile">
+        <mkdir dir="CuckooChessEngine/classes"/>
+        <javac srcdir="CuckooChessEngine/src" 
+	       destdir="CuckooChessEngine/classes">
+   		<include name="**/*.java"/>
+	</javac>
+        <javac srcdir="CuckooChessEngine/test" 
+	       destdir="CuckooChessEngine/classes">
+   		<include name="**/*.java"/>
+	</javac>
+        <mkdir dir="CuckooChess/classes"/>
+        <javac srcdir="CuckooChess/src" 
+	       destdir="CuckooChess/classes">
+   		<include name="**/*.java"/>
+	</javac>
+        <javac srcdir="CuckooChess/test" 
+	       destdir="CuckooChess/classes">
+   		<include name="**/*.java"/>
+	</javac>
+    </target>
     <target name="create_run_jar">
         <jar destfile="CuckooChess/deploy/CuckooChess.jar"
         	filesetmanifest="skip"
@@ -10,21 +30,13 @@
                 	<attribute name="Main-Class" value="tui.Main"/>
                 	<attribute name="Class-Path" value="."/>
         	</manifest>
-		<fileset dir="CuckooChessEngine/bin">
+		<fileset dir="CuckooChessEngine/classes">
         		<include name="**/*"/>
         		<exclude name="**/*Test.class"/>
        		</fileset>
-       		<fileset dir="CuckooChessEngine">
-       			<include name="src/**/*.java"/>
-       			<include name="test/**/*.java"/>
-       		</fileset>
-       		<fileset dir="CuckooChess/bin">
+       		<fileset dir="CuckooChess/classes">
         		<include name="**/*"/>
         		<exclude name="**/*Test.class"/>
-       		</fileset>
-       		<fileset dir="CuckooChess">
-       			<include name="src/**/*.java"/>
-       			<include name="test/**/*.java"/>
        		</fileset>
         </jar>
         <mkdir dir="CuckooChessAPK/libs"/>
