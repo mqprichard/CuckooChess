@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_rules" default="debug">
+  <property environment="env"/>
+    <target name="set-version-code">
+      <propertyfile file="version.properties">
+        <entry key="app.version.code" type="int" operation="=" value="${env.BUILD_NUMBER}" />
+      </propertyfile>
+      <property file="version.properties" />
+      <echo>Version code: ${app.version.code}</echo>
+      <property name="match.end" value='"' />
+      <property name="matchVersionCode.start" value='android:versionCode=\"' />
+      <replaceregexp file="AndroidManifest.xml" match='${matchVersionCode.start}[^"]*${match.end}' replace="${matchVersionCode.start}${app.version.code}${match.end}" />
+  </target>
+</project>
