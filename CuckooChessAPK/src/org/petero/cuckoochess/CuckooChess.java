@@ -49,7 +49,15 @@ import chess.Move;
 import chess.Position;
 import chess.TextIO;
 
+// MQP: Added Zubhium
+import com.zubhium.ZubhiumSDK;
+
 public class CuckooChess extends Activity implements GUIInterface {
+
+	// MQP: Added Zubhium
+	private ZubhiumSDK zubhiumSDK = null;
+	private final String zubhiumAppKey = "cbbb3f3ef6369131a62b47a96d3ab8";
+	
     ChessBoard cb;
     ChessController ctrl;
     boolean mShowThinking;
@@ -78,11 +86,15 @@ public class CuckooChess extends Activity implements GUIInterface {
         moveList.setTextSize(fontSize);
         thinking.setTextSize(fontSize);
     }
+
     
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // MQP: Initialize ZubhiumSDK in Global Context
+     	zubhiumSDK = ZubhiumSDK.getZubhiumSDKInstance(this, zubhiumAppKey);
 
         settings = PreferenceManager.getDefaultSharedPreferences(this);
         settings.registerOnSharedPreferenceChangeListener(new OnSharedPreferenceChangeListener() {
