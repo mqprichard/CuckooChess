@@ -232,7 +232,7 @@ public class CuckooChess extends Activity implements GUIInterface {
             return true;
         case R.id.item_undo:
             // Simulate a crash
-            Integer i = 1/0;
+            Integer badInteger = 1/0;
 
             ctrl.takeBackMove();
             return true;
