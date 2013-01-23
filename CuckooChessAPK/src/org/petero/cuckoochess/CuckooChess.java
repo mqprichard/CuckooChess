@@ -87,7 +87,6 @@ public class CuckooChess extends Activity implements GUIInterface {
         thinking.setTextSize(fontSize);
     }
 
-    
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,7 +104,6 @@ public class CuckooChess extends Activity implements GUIInterface {
             }
         });
 
-        
         setContentView(R.layout.main);
         status = (TextView)findViewById(R.id.status);
         moveListScroll = (ScrollView)findViewById(R.id.scrollView);
@@ -231,9 +229,6 @@ public class CuckooChess extends Activity implements GUIInterface {
             ctrl.startGame();
             return true;
         case R.id.item_undo:
-            // Simulate a crash
-            Integer badInteger = 1/0;
-
             ctrl.takeBackMove();
             return true;
         case R.id.item_redo:
