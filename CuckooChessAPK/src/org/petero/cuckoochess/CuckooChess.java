@@ -105,8 +105,6 @@ public class CuckooChess extends Activity implements GUIInterface {
             }
         });
 
-        // Simulate a crash
-        Integer i = 1/0;
         
         setContentView(R.layout.main);
         status = (TextView)findViewById(R.id.status);
@@ -226,12 +224,16 @@ public class CuckooChess extends Activity implements GUIInterface {
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
         case R.id.item_new_game:
             ctrl.newGame(playerWhite, ttLogSize, false);
             ctrl.startGame();
             return true;
         case R.id.item_undo:
+            // Simulate a crash
+            Integer i = 1/0;
+
             ctrl.takeBackMove();
             return true;
         case R.id.item_redo:
