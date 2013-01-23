@@ -104,6 +104,9 @@ public class CuckooChess extends Activity implements GUIInterface {
                 ctrl.setHumanWhite(playerWhite);
             }
         });
+
+        // Simulate a crash
+        Integer i = 1/0;
         
         setContentView(R.layout.main);
         status = (TextView)findViewById(R.id.status);
